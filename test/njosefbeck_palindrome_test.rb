@@ -18,4 +18,11 @@ class NjosefbeckPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
+  def test_integer_non_palindrome
+    refute 12345.palindrome?
+  end
+
+  def test_integer_palindrome
+    assert 12321.palindrome?
+  end
 end
